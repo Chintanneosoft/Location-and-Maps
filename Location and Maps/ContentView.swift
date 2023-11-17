@@ -9,14 +9,52 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            VStack {
+                
+                NavigationLink(destination: LocationTrackerView()) {
+                    Text("See My Location")
+                        .font(.subheadline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.red)
+                        .padding()
+                        .background(.yellow)
+                        .cornerRadius(30)
+                }
+                
+                
+                NavigationLink(destination: Annotations()) {
+                    Text("Annotations")
+                        .font(.subheadline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.red)
+                        .padding()
+                        .background(.yellow)
+                        .cornerRadius(30)
+                }
+                
+                NavigationLink(destination: PinsView(viewModel: PinsViewModel(
+                    cities: [
+                        City(coordinate: .init(latitude: 40.7128, longitude: 74.0060)),
+                        City(coordinate: .init(latitude: 37.7749, longitude: 122.4194)),
+                        City(coordinate: .init(latitude: 47.6062, longitude: 122.3321))]))) {
+                    Text("PinsView")
+                        .font(.subheadline)
+                        .fontWeight(.bold)
+                        .foregroundColor(.red)
+                        .padding()
+                        .background(.yellow)
+                        .cornerRadius(30)
+                }
+            }
+            .navigationTitle("Location and Views")
+            .padding()
+            .frame(maxWidth: .infinity,maxHeight: .infinity)
+            .background(.orange)
         }
-        .padding()
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
