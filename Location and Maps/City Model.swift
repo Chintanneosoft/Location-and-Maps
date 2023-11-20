@@ -7,8 +7,10 @@
 
 import Foundation
 import CoreLocation
+import SwiftUI
 
 struct City: Identifiable {
     let id = UUID()
     let coordinate: CLLocationCoordinate2D
+    let color: Color
 }

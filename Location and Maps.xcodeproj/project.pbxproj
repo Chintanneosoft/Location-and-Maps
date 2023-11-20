@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		926031012B0B3A46006F5355 /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926031002B0B3A46006F5355 /* RestaurantModel.swift */; };
+		926031032B0B3A91006F5355 /* RestaurantFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926031022B0B3A91006F5355 /* RestaurantFinder.swift */; };
+		926031052B0B3AD9006F5355 /* RestaurantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926031042B0B3AD9006F5355 /* RestaurantView.swift */; };
+		926031072B0B81DB006F5355 /* RestaurantOnMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926031062B0B81DB006F5355 /* RestaurantOnMapView.swift */; };
 		928343F42B0723350002C881 /* Location_and_MapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928343F32B0723350002C881 /* Location_and_MapsApp.swift */; };
 		928343F62B0723350002C881 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928343F52B0723350002C881 /* ContentView.swift */; };
 		928343F82B0723380002C881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 928343F72B0723380002C881 /* Assets.xcassets */; };
@@ -17,9 +21,14 @@
 		928344092B0777650002C881 /* PinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928344082B0777650002C881 /* PinsView.swift */; };
 		9283440B2B0777DE0002C881 /* City Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9283440A2B0777DE0002C881 /* City Model.swift */; };
 		9283440E2B0787120002C881 /* Pins ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9283440D2B0787120002C881 /* Pins ViewModel.swift */; };
+		928D65C12B0B310100A05742 /* Location Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928D65C02B0B310100A05742 /* Location Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		926031002B0B3A46006F5355 /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
+		926031022B0B3A91006F5355 /* RestaurantFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantFinder.swift; sourceTree = "<group>"; };
+		926031042B0B3AD9006F5355 /* RestaurantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantView.swift; sourceTree = "<group>"; };
+		926031062B0B81DB006F5355 /* RestaurantOnMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantOnMapView.swift; sourceTree = "<group>"; };
 		928343F02B0723350002C881 /* Location and Maps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Location and Maps.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		928343F32B0723350002C881 /* Location_and_MapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_and_MapsApp.swift; sourceTree = "<group>"; };
 		928343F52B0723350002C881 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +40,7 @@
 		928344082B0777650002C881 /* PinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinsView.swift; sourceTree = "<group>"; };
 		9283440A2B0777DE0002C881 /* City Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "City Model.swift"; sourceTree = "<group>"; };
 		9283440D2B0787120002C881 /* Pins ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pins ViewModel.swift"; sourceTree = "<group>"; };
+		928D65C02B0B310100A05742 /* Location Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location Manager.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		926030FF2B0B3A0E006F5355 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				926031002B0B3A46006F5355 /* RestaurantModel.swift */,
+				926031022B0B3A91006F5355 /* RestaurantFinder.swift */,
+				926031042B0B3AD9006F5355 /* RestaurantView.swift */,
+				926031062B0B81DB006F5355 /* RestaurantOnMapView.swift */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
 		928343E72B0723350002C881 = {
 			isa = PBXGroup;
 			children = (
@@ -64,10 +85,12 @@
 			isa = PBXGroup;
 			children = (
 				928343F32B0723350002C881 /* Location_and_MapsApp.swift */,
+				928D65C02B0B310100A05742 /* Location Manager.swift */,
+				9283440A2B0777DE0002C881 /* City Model.swift */,
 				928343F52B0723350002C881 /* ContentView.swift */,
 				928344062B0770B70002C881 /* Annotations.swift */,
+				926030FF2B0B3A0E006F5355 /* Restaurant */,
 				9283440C2B0786F70002C881 /* Pins View */,
-				9283440A2B0777DE0002C881 /* City Model.swift */,
 				928344052B0770060002C881 /* UIViewRepresentable */,
 				928343F72B0723380002C881 /* Assets.xcassets */,
 				928343F92B0723380002C881 /* Preview Content */,
@@ -173,12 +196,17 @@
 			files = (
 				928344092B0777650002C881 /* PinsView.swift in Sources */,
 				9283440B2B0777DE0002C881 /* City Model.swift in Sources */,
+				926031032B0B3A91006F5355 /* RestaurantFinder.swift in Sources */,
 				928344022B0723F10002C881 /* CurrentLocation.swift in Sources */,
 				928344042B0724800002C881 /* LocationTrackerView.swift in Sources */,
+				926031012B0B3A46006F5355 /* RestaurantModel.swift in Sources */,
+				928D65C12B0B310100A05742 /* Location Manager.swift in Sources */,
+				926031072B0B81DB006F5355 /* RestaurantOnMapView.swift in Sources */,
 				928344072B0770B70002C881 /* Annotations.swift in Sources */,
 				9283440E2B0787120002C881 /* Pins ViewModel.swift in Sources */,
 				928343F62B0723350002C881 /* ContentView.swift in Sources */,
 				928343F42B0723350002C881 /* Location_and_MapsApp.swift in Sources */,
+				926031052B0B3AD9006F5355 /* RestaurantView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
